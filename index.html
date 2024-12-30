@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Futuristic New Year 2025</title>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;700&family=Rajdhani:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main>
+        <div class="card">
+            <h1>New Year 2025</h1>
+            <div id="wishesForm">
+                <input type="text" id="nameInput" placeholder="Enter your name" required>
+                <button onclick="generateWishes()">Generate Wishes</button>
+            </div>
+            <div id="wishesDisplay" style="display: none;">
+                <div class="wishes-content">
+                    <div class="sparkle"></div>
+                    <h2>HAPPY NEW YEAR 2025</h2>
+                    <p id="userName"></p>
+                    <p class="signature">by Harish Reddy Duggempudi</p>
+                </div>
+                <div class="button-group">
+                    <button onclick="resetForm()">Try Again</button>
+                    <button onclick="downloadImage()">Download Image</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <canvas id="wishesCanvas" style="display: none;"></canvas>
+    <script src="script.js"></script>
+</body>
+</html>
